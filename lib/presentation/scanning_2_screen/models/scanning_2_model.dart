@@ -1,0 +1,1 @@
+class Scanning2Model {}
