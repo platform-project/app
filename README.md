@@ -2,15 +2,7 @@
 # platform
 
 <div>
-  <h1 align="center">Getting Started with Flutter 🚀 </h1>
-  <strong>
-    Generated with ❤️ from Dhiwise
-  </strong>
-  <p>
-    This is the documentation of Flutter Applications.
-    It holds all the info you need to get started with
-    and make changes to your App
-  </p>
+  <h1 align="center">Getting Started with Platform 🚀 </h1>
 </div>
 
 This application is build on MVVM architecture. 
@@ -100,4 +92,4 @@ https://pub.dev/packages/cached_network_image
     
 ### Support
 
-If you have problems or questions go to our Discord channel, we will then try to help you as quickly as possible: https://discord.com/invite/rFMnCG5MZ7
+If you have problems or questions go to our Discord channel, we will then try to help you as quickly as possible: https://discord.gg/BktxJeUC
