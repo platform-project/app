@@ -75,6 +75,7 @@ class _SimpleLoginScreenState extends State<SimpleLoginScreen> {
     double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: ListView(

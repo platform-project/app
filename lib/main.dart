@@ -1,16 +1,23 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nojitsu/pages/map_home.dart';
 import 'package:nojitsu/pages/live_location.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'package:nojitsu/core/app_export.dart';
 import 'package:nojitsu/widgets/demos/persistent_tabs.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+      overlays: SystemUiOverlay.values);
+
+  //await dotenv.load(fileName: ".env");
 
   runApp(MyApp());
 }

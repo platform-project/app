@@ -1,6 +1,6 @@
 // ignore: import_of_legacy_library_into_null_safe
-// ignore_for_file: unused_local_variable, duplicate_ignore, import_of_legacy_library_into_null_safe, unused_import, unnecessary_import, implementation_imports, deprecated_member_use
-import 'package:geolocator/geolocator.dart';
+// ignore_for_file: unused_local_variable, duplicate_ignore, import_of_legacy_library_into_null_safe, unused_import, unnecessary_import, implementation_imports, deprecated_member_use, prefer_const_literals_to_create_immutables
+//import 'package:geolocator/geolocator.dart';
 import 'controller/scanning_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:nojitsu/core/app_export.dart';
@@ -9,7 +9,7 @@ import 'package:nojitsu/main.dart';
 
 // ignore: must_be_immutable
 class ScanningScreen extends GetWidget<ScanningController> {
-  var locationMessage = "";
+  /*var locationMessage = "";
 
   void getCurrentLocation() async {
     // ignore: unused_local_variable
@@ -17,7 +17,7 @@ class ScanningScreen extends GetWidget<ScanningController> {
         .getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
 
     var lastPosition = await Geolocator().getLastKnownPosition();
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -72,13 +72,16 @@ class ScanningScreen extends GetWidget<ScanningController> {
                                                     onPressed: () {},
                                                     child: ListView(
                                                       children: [
-                                                        SizedBox(height: 50.0),
-                                                        Icon(Icons.location_on,
+                                                        const SizedBox(
+                                                            height: 50.0),
+                                                        const Icon(
+                                                            Icons.location_on,
                                                             size: 46.0,
                                                             color:
                                                                 Colors.white),
-                                                        SizedBox(height: 10.0),
-                                                        Align(
+                                                        const SizedBox(
+                                                            height: 10.0),
+                                                        const Align(
                                                           child: Text("Locate",
                                                               style: TextStyle(
                                                                   fontSize:

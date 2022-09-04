@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong.dart';
+import 'package:latlong2/latlong.dart' show LatLng;
 
 import '../widgets/drawer.dart';
 
@@ -62,11 +63,14 @@ class MapHomePage extends StatelessWidget {
                   ),
                   layers: [
                     TileLayerOptions(
-                      urlTemplate:
-                          'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-                      subdomains: ['a', 'b', 'c'],
-                      userAgentPackageName: 'com.entilda.platform.app',
-                    ),
+                        urlTemplate:
+                            'https://api.mapbox.com/styles/v1/bileckme/cjaj6vkteaj5z2smunv6u2sek/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYmlsZWNrbWUiLCJhIjoiY2szMDFsM2VzMGw2aTNubW1kam1hdDFyeCJ9.S9Gj66W6-72sdRnfZfOXTg',
+                        additionalOptions: {
+                          'accessToken':
+                              'pk.eyJ1IjoiYmlsZWNrbWUiLCJhIjoiY2szMDFsM2VzMGw2aTNubW1kam1hdDFyeCJ9.S9Gj66W6-72sdRnfZfOXTg',
+                          'id':
+                              'mapbox://styles/bileckme/cjaj6vkteaj5z2smunv6u2sek'
+                        }),
                     MarkerLayerOptions(markers: markers)
                   ],
                   nonRotatedChildren: [

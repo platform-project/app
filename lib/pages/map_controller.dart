@@ -1,4 +1,6 @@
-import 'dart:async';
+// ignore_for_file: library_prefixes
+
+import 'dart:async' show StreamSubscription;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -226,10 +228,11 @@ class _CurrentLocationState extends State<CurrentLocation> {
 
   void _moveToCurrent() async {
     _eventKey++;
-    var location = Location();
+
+    //var location = Location();
 
     try {
-      var currentLocation = await location.getLocation();
+      var currentLocation = await getLocation();
       var moved = widget.mapController.move(
         LatLng(currentLocation.latitude!, currentLocation.longitude!),
         18,

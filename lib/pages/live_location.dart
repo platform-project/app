@@ -26,7 +26,7 @@ class _LiveLocationPageState extends State<LiveLocationPage> {
 
   var interActiveFlags = InteractiveFlag.all;
 
-  final Location _locationService = Location();
+  final LocationData _locationService = LocationData();
 
   @override
   void initState() {
@@ -36,6 +36,9 @@ class _LiveLocationPageState extends State<LiveLocationPage> {
   }
 
   void initLocationService() async {
+    await getLocation();
+    return;
+    /*
     await _locationService.changeSettings(
       accuracy: LocationAccuracy.high,
       interval: 1000,
@@ -49,11 +52,12 @@ class _LiveLocationPageState extends State<LiveLocationPage> {
       serviceEnabled = await _locationService.serviceEnabled();
 
       if (serviceEnabled) {
-        var permission = await _locationService.requestPermission();
+        var permission =
+            await getPermissionStatus(); //await _locationService.requestPermission();
         _permission = permission == PermissionStatus.granted;
 
         if (_permission) {
-          location = await _locationService.getLocation();
+          location = await getLocation();
           _currentLocation = location;
           _locationService.onLocationChanged
               .listen((LocationData result) async {
@@ -87,7 +91,7 @@ class _LiveLocationPageState extends State<LiveLocationPage> {
         _serviceError = e.message;
       }
       location = null;
-    }
+    }*/
   }
 
   @override
