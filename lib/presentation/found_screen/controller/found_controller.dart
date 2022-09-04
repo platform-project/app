@@ -1,5 +1,5 @@
 import '/core/app_export.dart';
-import 'package:platform/presentation/found_screen/models/found_model.dart';
+import 'package:nojitsu/presentation/found_screen/models/found_model.dart';
 
 class FoundController extends GetxController with StateMixin<dynamic> {
   Rx<FoundModel> foundModelObj = FoundModel().obs;

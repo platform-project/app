@@ -1,7 +1,7 @@
 import 'controller/found_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:platform/core/app_export.dart';
+import 'package:nojitsu/core/app_export.dart';
 
 class FoundScreen extends GetWidget<FoundController> {
   @override

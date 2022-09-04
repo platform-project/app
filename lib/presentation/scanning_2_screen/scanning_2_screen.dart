@@ -1,6 +1,6 @@
 import 'controller/scanning_2_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:platform/core/app_export.dart';
+import 'package:nojitsu/core/app_export.dart';
 
 class Scanning2Screen extends GetWidget<Scanning2Controller> {
   @override

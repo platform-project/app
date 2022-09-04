@@ -1,3 +1,3 @@
-import 'package:platform/core/app_export.dart';
+import 'package:nojitsu/core/app_export.dart';
 
 class ApiClient extends GetConnect {}
