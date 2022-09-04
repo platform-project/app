@@ -2,9 +2,9 @@
 # platform
 
 <div>
-  <h1 align="center">Getting Started with Flutter 🚀 </h1>
+  <h1 align="center">Getting Started with Platform 🚀 </h1>
   <strong>
-    Generated with ❤️ from Dhiwise
+    Generated with ❤️ from Platform
   </strong>
   <p>
     This is the documentation of Flutter Applications.
