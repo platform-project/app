@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platform/core/app_export.dart';
+import 'package:nojitsu/core/app_export.dart';
 
 class AppDecoration {
   static BoxDecoration get groupstylebluegray800 => BoxDecoration(

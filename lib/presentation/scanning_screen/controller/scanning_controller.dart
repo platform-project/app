@@ -1,5 +1,5 @@
 import '/core/app_export.dart';
-import 'package:platform/presentation/scanning_screen/models/scanning_model.dart';
+import 'package:nojitsu/presentation/scanning_screen/models/scanning_model.dart';
 
 class ScanningController extends GetxController with StateMixin<dynamic> {
   Rx<ScanningModel> scanningModelObj = ScanningModel().obs;

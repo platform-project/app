@@ -1,5 +1,5 @@
 import '/core/app_export.dart';
-import 'package:platform/presentation/app_navigation_screen/models/app_navigation_model.dart';
+import 'package:nojitsu/presentation/app_navigation_screen/models/app_navigation_model.dart';
 
 class AppNavigationController extends GetxController with StateMixin<dynamic> {
   Rx<AppNavigationModel> appNavigationModelObj = AppNavigationModel().obs;

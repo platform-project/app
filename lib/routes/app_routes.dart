@@ -1,19 +1,17 @@
-import 'package:platform/presentation/scanning_1_screen/scanning_1_screen.dart';
-import 'package:platform/presentation/scanning_1_screen/binding/scanning_1_binding.dart';
-import 'package:platform/presentation/scanning_screen/scanning_screen.dart';
-import 'package:platform/presentation/scanning_screen/binding/scanning_binding.dart';
-import 'package:platform/presentation/found_screen/found_screen.dart';
-import 'package:platform/presentation/found_screen/binding/found_binding.dart';
-import 'package:platform/presentation/home_screen/home_screen.dart';
-import 'package:platform/presentation/home_screen/binding/home_binding.dart';
-import 'package:platform/presentation/scanning_2_screen/scanning_2_screen.dart';
-import 'package:platform/presentation/scanning_2_screen/binding/scanning_2_binding.dart';
-import 'package:platform/presentation/scanning_3_screen/scanning_3_screen.dart';
-import 'package:platform/presentation/scanning_3_screen/binding/scanning_3_binding.dart';
-import 'package:platform/presentation/splash_screen/splash_screen.dart';
-import 'package:platform/presentation/splash_screen/binding/splash_binding.dart';
-import 'package:platform/presentation/app_navigation_screen/app_navigation_screen.dart';
-import 'package:platform/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
+import 'package:nojitsu/presentation/scanning_1_screen/scanning_1_screen.dart';
+import 'package:nojitsu/presentation/scanning_1_screen/binding/scanning_1_binding.dart';
+import 'package:nojitsu/presentation/scanning_screen/scanning_screen.dart';
+import 'package:nojitsu/presentation/scanning_screen/binding/scanning_binding.dart';
+import 'package:nojitsu/presentation/found_screen/found_screen.dart';
+import 'package:nojitsu/presentation/found_screen/binding/found_binding.dart';
+import 'package:nojitsu/presentation/home_screen/home_screen.dart';
+import 'package:nojitsu/presentation/home_screen/binding/home_binding.dart';
+import 'package:nojitsu/presentation/scanning_2_screen/scanning_2_screen.dart';
+import 'package:nojitsu/presentation/scanning_2_screen/binding/scanning_2_binding.dart';
+import 'package:nojitsu/presentation/scanning_3_screen/scanning_3_screen.dart';
+import 'package:nojitsu/presentation/scanning_3_screen/binding/scanning_3_binding.dart';
+import 'package:nojitsu/presentation/app_navigation_screen/app_navigation_screen.dart';
+import 'package:nojitsu/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
 import 'package:get/get.dart';
 
 class AppRoutes {
@@ -79,13 +77,6 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: splashScreen,
-      page: () => SplashScreen(),
-      bindings: [
-        SplashBinding(),
-      ],
-    ),
-    GetPage(
       name: appNavigationScreen,
       page: () => AppNavigationScreen(),
       bindings: [
@@ -94,9 +85,9 @@ class AppRoutes {
     ),
     GetPage(
       name: initialRoute,
-      page: () => SplashScreen(),
+      page: () => ScanningScreen(),
       bindings: [
-        SplashBinding(),
+        ScanningBinding(),
       ],
     )
   ];
