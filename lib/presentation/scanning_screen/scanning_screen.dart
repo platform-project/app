@@ -4,7 +4,7 @@ import 'package:geolocator/geolocator.dart';
 import 'controller/scanning_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:nojitsu/core/app_export.dart';
-import 'package:nojitsu/presentation/scanning_screen/imports.dart';
+import 'package:nojitsu/core/app_import.dart';
 import 'package:nojitsu/main.dart';
 
 // ignore: must_be_immutable
